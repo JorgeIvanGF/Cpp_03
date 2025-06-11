@@ -6,7 +6,7 @@
 /*   By: jorgutie <jorgutie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 18:41:21 by jorgutie          #+#    #+#             */
-/*   Updated: 2025/06/10 19:01:49 by jorgutie         ###   ########.fr       */
+/*   Updated: 2025/06/11 09:50:48 by jorgutie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,9 @@ class ClapTrap
 		int _attackDamage;
 
 	public:
-	
+
+		ClapTrap(const std::string &name);
+		
 		// Orthodox Canonical Form
 		ClapTrap();                                  // Default Constructor
 		ClapTrap(const ClapTrap &other);             // Copy Constructor
