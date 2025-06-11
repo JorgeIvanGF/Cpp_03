@@ -6,22 +6,28 @@
 /*   By: jorgutie <jorgutie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 19:10:35 by jorgutie          #+#    #+#             */
-/*   Updated: 2025/06/11 19:11:44 by jorgutie         ###   ########.fr       */
+/*   Updated: 2025/06/11 19:26:12 by jorgutie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SCAVTRAP_HPP
 #define SCAVTRAP_HPP
 
+// Colors
+#define RESET   "\033[0m"
+#define YELLOW  "\033[0;33m"
+#define MAGENTA "\033[0;35m"
+#define RED "\033[0;31m"
+
 #include "ClapTrap.hpp"
 
 class ScavTrap : public ClapTrap
 {
 	public:
-		ScavTrap();  // Default
-		ScavTrap(const std::string& name);
-		ScavTrap(const ScavTrap& other);
-		ScavTrap& operator=(const ScavTrap& other);
+		ScavTrap();                                 // Default Constructor
+		ScavTrap(const std::string& name);          // Param Constructor
+		ScavTrap(const ScavTrap& other);            // Copy Constructor
+		ScavTrap& operator=(const ScavTrap& other); // Assignment operator
 		~ScavTrap();
 
 		void attack(const std::string& target); // override
