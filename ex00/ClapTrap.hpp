@@ -6,7 +6,7 @@
 /*   By: jorgutie <jorgutie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 18:41:21 by jorgutie          #+#    #+#             */
-/*   Updated: 2025/06/11 09:50:48 by jorgutie         ###   ########.fr       */
+/*   Updated: 2025/06/11 10:38:56 by jorgutie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,12 @@
 #define CLAPTRAP_HPP
 
 #include <iostream>
+
+// Colors
+#define RESET   "\033[0m"
+#define YELLOW  "\033[0;33m"
+#define MAGENTA "\033[0;35m"
+#define RED "\033[0;31m"
 
 class ClapTrap
 {
@@ -37,6 +43,9 @@ class ClapTrap
 		void attack(const std::string& target);
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
+
+		// My additional Method
+		void status() const;
 };
 
 #endif
