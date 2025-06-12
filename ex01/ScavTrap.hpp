@@ -6,7 +6,7 @@
 /*   By: jorgutie <jorgutie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 19:10:35 by jorgutie          #+#    #+#             */
-/*   Updated: 2025/06/11 19:26:12 by jorgutie         ###   ########.fr       */
+/*   Updated: 2025/06/12 15:31:48 by jorgutie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 #define MAGENTA "\033[0;35m"
 #define RED "\033[0;31m"
 
-#include "ClapTrap.hpp"
+#include "ex00/ClapTrap.hpp" //because is in the subfolder ex00
 
 class ScavTrap : public ClapTrap
 {
