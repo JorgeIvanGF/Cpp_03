@@ -6,7 +6,7 @@
 /*   By: jorgutie <jorgutie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 18:41:21 by jorgutie          #+#    #+#             */
-/*   Updated: 2025/06/12 15:08:05 by jorgutie         ###   ########.fr       */
+/*   Updated: 2025/06/12 16:22:10 by jorgutie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 
 class ClapTrap
 {
-	protected:  //To be able to access in Child Classes
+	protected:  // "Protected" To be able to access in Child Classes
 		std::string _name;
 		int _hitPoints;
 		int _energyPoints;

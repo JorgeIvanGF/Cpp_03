@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Fragtap.hpp                                        :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jorgutie <jorgutie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 15:40:39 by jorgutie          #+#    #+#             */
-/*   Updated: 2025/06/12 16:18:34 by jorgutie         ###   ########.fr       */
+/*   Updated: 2025/06/12 17:05:26 by jorgutie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,14 @@ class FragTrap : public ClapTrap
 {
 	public:
 		FragTrap(); 								// Default constructor
-		FragTrap(const std::string name); 			// Param Constructor
+		FragTrap(const std::string& name); 			// Param Constructor
 		FragTrap(const FragTrap& other);			// Copy Constructor
 		FragTrap& operator=(const FragTrap& other); // Assignment operator
 		~FragTrap();								// Destructor
 
 		// Methods
 		void attack(const std::string& target);		// Override Attack
-		void highFiveGuys();						// Unique method
+		void highFivesGuys();						// Unique method
 		
 };
 
