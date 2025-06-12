@@ -6,7 +6,7 @@
 /*   By: jorgutie <jorgutie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 16:22:40 by jorgutie          #+#    #+#             */
-/*   Updated: 2025/06/12 17:05:52 by jorgutie         ###   ########.fr       */
+/*   Updated: 2025/06/12 18:05:36 by jorgutie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,21 @@ FragTrap::~FragTrap()
 	std::cout << "FragTrap " << YELLOW << _name << RESET <<" destructed\n";
 }
 
+// Override Attack
+void FragTrap::attack(const std::string& target)
+{
+	if (_hitPoints <= 0 || _energyPoints <= 0)
+	{
+		std::cout << "FragTrap " << YELLOW << _name << RESET << " is too weak to attack\n";
+		return;
+	}
+	_energyPoints--;
+	std::cout << "FragTrap " << YELLOW << _name << RESET << " launches an epic attack on " << YELLOW << target << RESET
+			  << ", dealing " << YELLOW << _attackDamage << RESET << " damage!\n";
+}
+
 // Special Method for this Class
 void FragTrap::highFivesGuys()
 {
-	std::cout << "FragTrap " << YELLOW << _name << RESET << " requests a high five! 🙌\n";
+	std::cout << "FragTrap " << YELLOW << _name << RESET << " requests a high five!\n";
 }
